@@ -27,3 +27,4 @@ jobs:
         run: pnpx @gravityci/cli ".next/server/**/*" ".next/static/{chunks,css,media}/**/*" --fingerprint "^(?!.*chunk).+(\.[0-9A-Za-z]{8})\..+"
         env:
           GRAVITY_TOKEN: ${{ secrets.GRAVITY_TOKEN }}
+          GRAVITY_HOST: ${{ vars.GRAVITY_HOST }}
